@@ -1,6 +1,8 @@
 <Project>
   <PropertyGroup>
     <DebugType Condition="'$(Configuration)' == 'Debug'">Full</DebugType>
+
+      <EnableNETAnalyzers Condition="'$(EnableNETAnalyzers)' == ''">true</EnableNETAnalyzers>
   </PropertyGroup>
 
   <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.79" />
